@@ -33,7 +33,7 @@ let uploadedFiles = [];
 // ====================== SEGURIDAD: API KEY desde .env ======================
 let API_KEY = "";
 try {
-    API_KEY = import.meta.env?.VITE_GEMINI_API_KEY || "";
+    API_KEY = import.meta.env.VITE_GEMINI_API_KEY || "";
     if (!API_KEY) {
         console.warn("⚠️ No se encontró VITE_GEMINI_API_KEY en .env");
     }
